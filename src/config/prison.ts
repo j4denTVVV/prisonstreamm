@@ -88,6 +88,11 @@ import mastiempoAsset from "@/assets/mastiempo01.png";
 import j1ggzzAsset from "@/assets/j1ggzz365.png";
 import j4dentvAsset from "@/assets/j4dentv.png";
 import ysabellaAsset from "@/assets/ysabellagrace.png";
+import smoothboimoAsset from "@/assets/smoothboimo.png";
+import goobAsset from "@/assets/goob.png";
+import starTejalAsset from "@/assets/star_tejal.png";
+import yodeangeloAsset from "@/assets/yodeangelo.png";
+import gracieAsset from "@/assets/gracie.png";
 
 export type SocialLink = { platform: string; url: string };
 
