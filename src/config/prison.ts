@@ -397,7 +397,7 @@ export const roster: RosterEntry[] = [
     revealed: true,
     clearance: "CONFIRMED",
     name: "JMARNZ",
-    aliases: ["J MARNZ"],
+    aliases: ["J MARNZ", "JMARNZ", "REALJMARNZ", "REAL JMARNZ", "MARNZ"],
     role: "INMATE",
     image: jmarnzAsset,
     bio: "Jmarnz previously built a large TikTok following of around 170K before being banned from the platform. He became known for going live and talking about relatable topics, and now streams on Twitch while continuing to post content across social media.",
