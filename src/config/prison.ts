@@ -445,7 +445,7 @@ export const roster: RosterEntry[] = [
     revealed: true,
     clearance: "CONFIRMED",
     name: "YSABELLAGRACE",
-    aliases: ["YSABELLA", "YSABELLA GRACE"],
+    aliases: ["YSABELLA", "YSABELLA GRACE", "ISABELLA", "ISABELLAGRACE", "GRACE"],
     role: "GUIDANCE COUNSELOR",
     image: ysabellaAsset,
     bio: "YsabellaGrace is a female streamer and gamer known for her Just Chatting and gaming content. She was the first female streamer to take part in Streamer University, becoming part of the wider streaming community through her content and livestreams.",
