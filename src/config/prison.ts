@@ -88,6 +88,11 @@ import mastiempoAsset from "@/assets/mastiempo01.png";
 import j1ggzzAsset from "@/assets/j1ggzz365.png";
 import j4dentvAsset from "@/assets/j4dentv.png";
 import ysabellaAsset from "@/assets/ysabellagrace.png";
+import smoothboimoAsset from "@/assets/smoothboimo.png";
+import goobAsset from "@/assets/goob.png";
+import starTejalAsset from "@/assets/star_tejal.png";
+import yodeangeloAsset from "@/assets/yodeangelo.png";
+import gracieAsset from "@/assets/gracie.png";
 
 export type SocialLink = { platform: string; url: string };
 
@@ -450,6 +455,78 @@ export const roster: RosterEntry[] = [
     image: ysabellaAsset,
     bio: "YsabellaGrace is a female streamer and gamer known for her Just Chatting and gaming content. She was the first female streamer to take part in Streamer University, becoming part of the wider streaming community through her content and livestreams.",
     socials: [],
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "031",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "SMOOTHBOIMO",
+    aliases: ["SMOOTHBOIMO_", "SMOOTHBOYMO", "SMOOTH BOI MO", "MO"],
+    role: "INMATE",
+    image: smoothboimoAsset,
+    bio: "smoothboimo is a content creator and online personality known for his social media presence and entertaining content. He has built his own identity online through his personality and connection with his audience.",
+    socials: [{ platform: "Twitch", url: "https://www.twitch.tv/smoothboimo_" }],
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "033",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "GOOB",
+    aliases: ["NOSTYLISTJETLGGD", "JETLGGD", "GOOBY"],
+    role: "INMATE",
+    image: goobAsset,
+    bio: "goob is an online creator and personality known for his entertaining social media presence. His content is centred around his personality and interactions with his audience, helping him build recognition within the creator space.",
+    socials: [{ platform: "TikTok", url: "https://www.tiktok.com/@nostylistjetlggd" }],
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "034",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "STAR_TEJAL",
+    aliases: ["STAR TEJAL", "STARTEJAL", "TEJAL", "STAR_TEJALXX", "STARTEJALXX"],
+    role: "INMATE",
+    image: starTejalAsset,
+    bio: "Star_tejal is a digital creator and social media personality who has built an online presence through entertaining and personality-led content. Her individuality and online interactions have helped her develop a growing audience.",
+    socials: [
+      { platform: "Instagram", url: "https://www.instagram.com/star_tejalxx" },
+      { platform: "TikTok", url: "https://www.tiktok.com/@star_tejalxx" },
+      { platform: "Twitch", url: "https://www.twitch.tv/star_tejalxx" },
+      { platform: "X", url: "https://x.com/star_tejalxx" },
+      { platform: "Snapchat", url: "https://www.snapchat.com/add/star_tejalxx" },
+      { platform: "Linktree", url: "https://linktr.ee/star_tejalxx" },
+    ],
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "035",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "YODEANGELO",
+    aliases: ["YO DEANGELO", "DEANGELO", "IMDEANGELO", "YODEANGELO_"],
+    role: "INMATE",
+    image: yodeangeloAsset,
+    bio: "YoDeangelo is a London-based British streamer and content creator who built a following of over 300,000 on TikTok, mainly through livestream clips, challenges, reactions and dance content. He later moved further into livestreaming, playing games such as Fortnite and GTA while also doing Just Chatting streams. In 2026, he appeared in a Sidemen video, where his humour and personality stood out and brought him even more attention.",
+    socials: [
+      { platform: "Twitch", url: "https://www.twitch.tv/YoDeangelo" },
+      { platform: "Instagram", url: "https://www.instagram.com/yodeangelo_" },
+      { platform: "Discord", url: "https://discord.gg/FSncbv4rvP" },
+      { platform: "Linktree", url: "https://linktr.ee/imdeangelo" },
+    ],
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "036",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "GRACIE",
+    aliases: ["THYFAWN", "GRACIE"],
+    role: "INMATE",
+    image: gracieAsset,
+    bio: "gracie is a digital creator and online personality who has developed her presence through social media and entertainment. Her content is driven by her personality and creativity, helping her build her own identity and audience online.",
+    socials: [{ platform: "Instagram", url: "https://www.instagram.com/thyfawn/" }],
     status: "CONFIRMED — INSIDE",
   },
 ];
