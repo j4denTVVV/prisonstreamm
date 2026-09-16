@@ -373,7 +373,7 @@ export const roster: RosterEntry[] = [
     revealed: true,
     clearance: "CONFIRMED",
     name: "MALLYCLIPZ",
-    aliases: ["MALLY", "MALLY CLIPZ"],
+    aliases: ["MALLY", "MALLY CLIPZ", "MALLYCLIPS", "MALLY CLIPS"],
     role: "INMATE",
     image: mallyclipzAsset,
     bio: "Mallyclipz is a content creator known for sharing entertaining clips and social media content. He has developed his own identity within the online creator space and continues to grow his presence across digital platforms.",
