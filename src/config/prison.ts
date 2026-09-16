@@ -79,6 +79,15 @@ import lbmmAsset from "@/assets/lbmm.jpg";
 import r3dAsset from "@/assets/upload-image-8.png";
 import tyroneAsset from "@/assets/tyrone1mc.jpg";
 import kingsleyAsset from "@/assets/upload-image-10.png";
+import remyb0ysAsset from "@/assets/remyb0ys.png";
+import britishboycamAsset from "@/assets/britishboycam.png";
+import mallyclipzAsset from "@/assets/mallyclipz.png";
+import sammyamzAsset from "@/assets/sammyamz.png";
+import jmarnzAsset from "@/assets/jmarnz.png";
+import mastiempoAsset from "@/assets/mastiempo01.png";
+import j1ggzzAsset from "@/assets/j1ggzz365.png";
+import j4dentvAsset from "@/assets/j4dentv.png";
+import ysabellaAsset from "@/assets/ysabellagrace.png";
 
 export type SocialLink = { platform: string; url: string };
 
@@ -358,8 +367,8 @@ export const liveStreams: Stream[] = [];
 export const trailer = {
   released: true,
   label: "TRANSMISSION 001",
-  /** Instagram reel — first transmission */
-  url: "https://www.instagram.com/reel/DcOsXiWN6Ex/",
+  /** Official trailer — YouTube */
+  url: "https://www.youtube.com/watch?v=QrnMwZ_7gSU",
   runtime: "CLASSIFIED",
 };
 
