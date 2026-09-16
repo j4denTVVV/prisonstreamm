@@ -101,7 +101,7 @@ function TrailerPage() {
             tone={trailer.released ? "ok" : "warn"}
           />
           <DataRow label="Runtime" value={trailer.runtime} tone="muted" />
-          <DataRow label="Subject" value="FILE 001 — XKEONTE" tone="ok" />
+          <DataRow label="Source" value="YOUTUBE" tone="ok" />
         </ClassifiedPanel>
       </div>
     </PageShell>
