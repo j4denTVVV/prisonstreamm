@@ -409,7 +409,7 @@ export const roster: RosterEntry[] = [
     revealed: true,
     clearance: "CONFIRMED",
     name: "MASTIEMPO01",
-    aliases: ["MASTIEMPO", "TIEMPO"],
+    aliases: ["MASTIEMPO", "TIEMPO", "MAS TIEMPO", "MASTIEMPO 01"],
     role: "INMATE",
     image: mastiempoAsset,
     bio: "Mastiempo01 is an online creator who is also known for being a moderator for several creators and communities. Alongside supporting other creators, he has developed his own presence and continues to do his own content.",
