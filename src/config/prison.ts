@@ -433,7 +433,7 @@ export const roster: RosterEntry[] = [
     revealed: true,
     clearance: "CONFIRMED",
     name: "J4DENTV",
-    aliases: ["J4DEN", "JADEN", "4TV"],
+    aliases: ["J4DEN", "JADEN", "4TV", "JADENTV", "J4DEN TV"],
     role: "INMATE",
     image: j4dentvAsset,
     bio: "j4denTV is a British content creator from Nottingham known for livestreaming, gaming and social media content. He has built the 4TV community around his online presence and creates a mix of live streams, reactions and short-form content.",
