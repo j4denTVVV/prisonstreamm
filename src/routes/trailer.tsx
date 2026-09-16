@@ -20,10 +20,13 @@ export const Route = createFileRoute("/trailer")({
   component: TrailerPage,
 });
 
-/** Convert an Instagram reel/post URL into its embed URL. */
+/** Convert a YouTube or Instagram URL into its embed URL. */
 function toEmbed(url: string): string | null {
-  const m = url.match(/instagram\.com\/(reel|p|reels)\/([\w-]+)/);
-  return m ? `https://www.instagram.com/${m[1]}/${m[2]}/embed` : null;
+  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]+)/);
+  if (yt) return `https://www.youtube.com/embed/${yt[1]}`;
+  const ig = url.match(/instagram\.com\/(reel|p|reels)\/([\w-]+)/);
+  if (ig) return `https://www.instagram.com/${ig[1]}/${ig[2]}/embed`;
+  return null;
 }
 
 function TrailerPage() {
@@ -85,7 +88,7 @@ function TrailerPage() {
           rel="noreferrer"
           className="mt-4 inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.24em] text-rust uppercase hover:text-foreground"
         >
-          Watch on Instagram <ExternalLink className="h-3.5 w-3.5" />
+          Watch on YouTube <ExternalLink className="h-3.5 w-3.5" />
         </a>
       ) : null}
 
@@ -98,7 +101,7 @@ function TrailerPage() {
             tone={trailer.released ? "ok" : "warn"}
           />
           <DataRow label="Runtime" value={trailer.runtime} tone="muted" />
-          <DataRow label="Subject" value="FILE 001 — XKEONTE" tone="ok" />
+          <DataRow label="Source" value="YOUTUBE" tone="ok" />
         </ClassifiedPanel>
       </div>
     </PageShell>
