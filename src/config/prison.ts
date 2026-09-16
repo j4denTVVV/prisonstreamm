@@ -421,7 +421,7 @@ export const roster: RosterEntry[] = [
     revealed: true,
     clearance: "CONFIRMED",
     name: "J1GGZZ365",
-    aliases: ["J1GGZZ", "JIGGZZ", "365"],
+    aliases: ["J1GGZZ", "JIGGZZ", "365", "JIGGZ", "JIGGZ365", "JIGGZZ365", "J1GGZ", "J1GGZ365"],
     role: "INMATE",
     image: j1ggzzAsset,
     bio: "J1ggzz365 is a South London streamer known for his 365 community and the creators around it. He has focused on growing 365 as a community while collaborating and building connections with other creators, including members such as KingsleyCMA.",
