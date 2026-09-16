@@ -68,7 +68,7 @@ export const projectFile = [
  * ------------------------------------------------------------------- */
 import xkeonteAsset from "@/assets/xkeonte-portrait.jpg";
 import sebzAsset from "@/assets/sebzonair.jpg";
-import amiriAsset from "@/assets/amirididit.png";
+import amiriAsset from "@/assets/4didit-group.png";
 import primeAsset from "@/assets/primedehaney.png";
 import mrwrldAsset from "@/assets/upload-image-2.png";
 import samhamAsset from "@/assets/upload-image-3.png";
@@ -172,7 +172,7 @@ export const roster: RosterEntry[] = [
     platform: "TWITCH",
     role: "INMATE",
     image: amiriAsset,
-    bio: "4DidIt, also known as AmirIDidIt, is a British content creator and online personality known for his entertaining personality, social media presence and creator-focused content. He has developed his own identity online through engaging with his audience, collaborating with other creators and sharing entertaining moments across social platforms.",
+    bio: "4DidIt is a British group made up of four creators, including AmirIDidIt. Known for their entertaining content and social media presence, the group has built its identity through engaging with their audience, collaborating with other creators and sharing entertaining moments across social platforms.",
     socials: [
       { platform: "Instagram", url: "https://www.instagram.com/amirididit/" },
       { platform: "Twitch", url: "https://www.twitch.tv/4didit" },
