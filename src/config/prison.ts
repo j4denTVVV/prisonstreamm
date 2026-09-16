@@ -349,7 +349,7 @@ export const roster: RosterEntry[] = [
     revealed: true,
     clearance: "CONFIRMED",
     name: "REMYB0YS",
-    aliases: ["REMY", "REMYB0YS", "REMY BOYS"],
+    aliases: ["REMY", "REMYB0YS", "REMY BOYS", "REMYBOYS", "REMYBOY", "REMYB0Y"],
     role: "INMATE",
     image: remyb0ysAsset,
     bio: "Remyb0ys first gained attention through his dancing TikToks before moving into livestreaming. He now streams FIFA on Twitch alongside a variety of other content, continuing to build his audience across different platforms.",
