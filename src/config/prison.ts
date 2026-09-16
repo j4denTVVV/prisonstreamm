@@ -86,7 +86,7 @@ import sammyamzAsset from "@/assets/sammyamz.png";
 import jmarnzAsset from "@/assets/jmarnz.png";
 import mastiempoAsset from "@/assets/mastiempo01.png";
 import j1ggzzAsset from "@/assets/j1ggzz365.png";
-import j4dentvAsset from "@/assets/j4dentv.png";
+import j4dentvAsset from "@/assets/j4dentv.jpg";
 import ysabellaAsset from "@/assets/ysabellagrace.png";
 import smoothboimoAsset from "@/assets/smoothboimo.png";
 import goobAsset from "@/assets/goob.png";
@@ -442,7 +442,10 @@ export const roster: RosterEntry[] = [
     role: "INMATE",
     image: j4dentvAsset,
     bio: "j4denTV is a British content creator from Nottingham known for livestreaming, gaming and social media content. He has built the 4TV community around his online presence and creates a mix of live streams, reactions and short-form content.",
-    socials: [],
+    socials: [
+      { platform: "TikTok", url: "https://www.tiktok.com/@wrldofj4den" },
+      { platform: "Linktree", url: "https://linktr.ee/j4dentv" },
+    ],
     status: "CONFIRMED — INSIDE",
   },
   {
