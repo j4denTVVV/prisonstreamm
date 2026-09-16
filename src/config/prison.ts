@@ -361,7 +361,7 @@ export const roster: RosterEntry[] = [
     revealed: true,
     clearance: "CONFIRMED",
     name: "BRITISHBOYCAM",
-    aliases: ["BRITISH BOY CAM", "CAM"],
+    aliases: ["BRITISH BOY CAM", "CAM", "BBC", "BOYCAM"],
     role: "INMATE",
     image: britishboycamAsset,
     bio: "BritishBoyCam is a streamer known for his variety of content, particularly his Just Chatting streams and girl-focused content. His streams are built around his personality and interactions with different guests and viewers.",
