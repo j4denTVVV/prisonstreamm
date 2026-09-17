@@ -550,8 +550,12 @@ export const roster: RosterEntry[] = [
     name: "LUNAMICHELLE",
     aliases: ["LUNA", "LUNAMICHELLE"],
     role: "INMATE",
-    image: lunamichelleAsset,
+    image: lunamichelle2Asset,
     bio: "LunaMichelle is a digital creator and online personality known for her presence across social media and livestreaming. Her content focuses on entertainment, personality and connecting with her audience, while she continues to develop her own identity within the creator space.",
+    socials: [
+      { platform: "Instagram", url: "https://www.instagram.com/lunamichelleeee/" },
+      { platform: "Twitch", url: "https://www.twitch.tv/itslunamichelle" },
+    ],
     status: "CONFIRMED — INSIDE",
   },
   {
