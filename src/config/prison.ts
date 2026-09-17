@@ -398,7 +398,7 @@ export const roster: RosterEntry[] = [
     role: "INMATE",
     image: sammyamzAsset,
     bio: "Sammyamz became widely known through the FaZe Subathon, before later moving over to Twitch. He is also known for his skits and personality-driven content, building an audience through his humour and entertaining style.",
-    socials: [],
+    socials: [{ platform: "Twitch", url: "https://www.twitch.tv/sammyamz" }],
     status: "CONFIRMED — INSIDE",
   },
   {
@@ -410,7 +410,10 @@ export const roster: RosterEntry[] = [
     role: "INMATE",
     image: jmarnzAsset,
     bio: "Jmarnz previously built a large TikTok following of around 170K before being banned from the platform. He became known for going live and talking about relatable topics, and now streams on Twitch while continuing to post content across social media.",
-    socials: [],
+    socials: [
+      { platform: "Twitch", url: "https://www.twitch.tv/realjmarnz" },
+      { platform: "TikTok", url: "https://www.tiktok.com/@realjmarnz" },
+    ],
     status: "CONFIRMED — INSIDE",
   },
   {
@@ -434,7 +437,7 @@ export const roster: RosterEntry[] = [
     role: "INMATE",
     image: j1ggzzAsset,
     bio: "J1ggzz365 is a South London streamer known for his 365 community and the creators around it. He has focused on growing 365 as a community while collaborating and building connections with other creators, including members such as KingsleyCMA.",
-    socials: [],
+    socials: [{ platform: "Twitch", url: "https://www.twitch.tv/j1ggzz365" }],
     status: "CONFIRMED — INSIDE",
   },
   {
@@ -461,7 +464,11 @@ export const roster: RosterEntry[] = [
     role: "GUIDANCE COUNSELOR",
     image: ysabellaAsset,
     bio: "YsabellaGrace is a female streamer and gamer known for her Just Chatting and gaming content. She was the first female streamer to take part in Streamer University, becoming part of the wider streaming community through her content and livestreams.",
-    socials: [],
+    socials: [
+      { platform: "Twitch", url: "https://www.twitch.tv/ysabellagrace" },
+      { platform: "Instagram", url: "https://www.instagram.com/ysabellagrace_" },
+      { platform: "TikTok", url: "https://www.tiktok.com/@ysabellagrace_" },
+    ],
     status: "CONFIRMED — INSIDE",
   },
   {
@@ -556,6 +563,10 @@ export const roster: RosterEntry[] = [
     role: "INMATE",
     image: moalshemeriAsset,
     bio: "MoAlshemeri is an online creator and personality who has built his presence through social media and digital entertainment. His content is centred around his personality and interactions with his audience, helping him establish his own identity online.",
+    socials: [
+      { platform: "TikTok", url: "https://www.tiktok.com/@moalshameri" },
+      { platform: "Instagram", url: "https://www.instagram.com/moalshameri" },
+    ],
     status: "CONFIRMED — INSIDE",
   },
   {
@@ -567,6 +578,7 @@ export const roster: RosterEntry[] = [
     role: "INMATE",
     image: tigzAsset,
     bio: "TigZ is a British Twitch streamer from the West Midlands known for gaming content, particularly Escape from Tarkov and other extraction shooters. He has been streaming since 2019 and has built a dedicated community around his gaming content.",
+    socials: [{ platform: "Twitch", url: "https://www.twitch.tv/tigz" }],
     status: "CONFIRMED — INSIDE",
   },
   {
@@ -578,6 +590,7 @@ export const roster: RosterEntry[] = [
     role: "INMATE",
     image: queentayxAsset,
     bio: "Queentayx is a streamer and digital creator known for her personality-driven content and livestreams. She has built an online community through her streams and social media, creating content focused on entertainment and interaction with her audience.",
+    socials: [{ platform: "Twitch", url: "https://www.twitch.tv/queentayx" }],
     status: "CONFIRMED — INSIDE",
   },
 ];
