@@ -93,6 +93,10 @@ import goobAsset from "@/assets/goob.png";
 import starTejalAsset from "@/assets/star_tejal.png";
 import yodeangeloAsset from "@/assets/yodeangelo.png";
 import gracieAsset from "@/assets/gracie.png";
+import lunamichelleAsset from "@/assets/lunamichelle.png";
+import moalshemeriAsset from "@/assets/moalshemeri.png";
+import tigzAsset from "@/assets/tigz.png";
+import queentayxAsset from "@/assets/queentayx.png";
 
 export type SocialLink = { platform: string; url: string };
 
@@ -530,6 +534,50 @@ export const roster: RosterEntry[] = [
     image: gracieAsset,
     bio: "gracie is a digital creator and online personality who has developed her presence through social media and entertainment. Her content is driven by her personality and creativity, helping her build her own identity and audience online.",
     socials: [{ platform: "Instagram", url: "https://www.instagram.com/thyfawn/" }],
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "016",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "LUNAMICHELLE",
+    aliases: ["LUNA", "LUNAMICHELLE"],
+    role: "INMATE",
+    image: lunamichelleAsset,
+    bio: "LunaMichelle is a digital creator and online personality known for her presence across social media and livestreaming. Her content focuses on entertainment, personality and connecting with her audience, while she continues to develop her own identity within the creator space.",
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "017",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "MOALSHEMERI",
+    aliases: ["MO", "MOALSHEMERI"],
+    role: "INMATE",
+    image: moalshemeriAsset,
+    bio: "MoAlshemeri is an online creator and personality who has built his presence through social media and digital entertainment. His content is centred around his personality and interactions with his audience, helping him establish his own identity online.",
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "018",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "TIGZ",
+    aliases: ["TIGS", "TIGZ"],
+    role: "INMATE",
+    image: tigzAsset,
+    bio: "TigZ is a British Twitch streamer from the West Midlands known for gaming content, particularly Escape from Tarkov and other extraction shooters. He has been streaming since 2019 and has built a dedicated community around his gaming content.",
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "019",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "QUEENTAYX",
+    aliases: ["QUEENTAY", "TAY", "QUEENTAYX"],
+    role: "INMATE",
+    image: queentayxAsset,
+    bio: "Queentayx is a streamer and digital creator known for her personality-driven content and livestreams. She has built an online community through her streams and social media, creating content focused on entertainment and interaction with her audience.",
     status: "CONFIRMED — INSIDE",
   },
 ];
