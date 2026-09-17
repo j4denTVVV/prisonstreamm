@@ -93,7 +93,7 @@ import goobAsset from "@/assets/goob.png";
 import starTejalAsset from "@/assets/star_tejal.png";
 import yodeangeloAsset from "@/assets/yodeangelo.png";
 import gracieAsset from "@/assets/gracie.png";
-import lunamichelleAsset from "@/assets/lunamichelle.png";
+import lunamichelle2Asset from "@/assets/lunamichelle2.png";
 import moalshemeriAsset from "@/assets/moalshemeri.png";
 import tigzAsset from "@/assets/tigz.png";
 import queentayxAsset from "@/assets/queentayx.png";
@@ -550,8 +550,12 @@ export const roster: RosterEntry[] = [
     name: "LUNAMICHELLE",
     aliases: ["LUNA", "LUNAMICHELLE"],
     role: "INMATE",
-    image: lunamichelleAsset,
+    image: lunamichelle2Asset,
     bio: "LunaMichelle is a digital creator and online personality known for her presence across social media and livestreaming. Her content focuses on entertainment, personality and connecting with her audience, while she continues to develop her own identity within the creator space.",
+    socials: [
+      { platform: "Instagram", url: "https://www.instagram.com/lunamichelleeee/" },
+      { platform: "Twitch", url: "https://www.twitch.tv/itslunamichelle" },
+    ],
     status: "CONFIRMED — INSIDE",
   },
   {
