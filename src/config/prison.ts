@@ -93,7 +93,7 @@ import goobAsset from "@/assets/goob.png";
 import starTejalAsset from "@/assets/star_tejal.png";
 import yodeangeloAsset from "@/assets/yodeangelo.png";
 import gracieAsset from "@/assets/gracie.png";
-import lunamichelleAsset from "@/assets/lunamichelle.png";
+import lunamichelle2Asset from "@/assets/lunamichelle2.png";
 import moalshemeriAsset from "@/assets/moalshemeri.png";
 import tigzAsset from "@/assets/tigz.png";
 import queentayxAsset from "@/assets/queentayx.png";
