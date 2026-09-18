@@ -67,6 +67,8 @@ export const projectFile = [
  * does NOT imply a participant count.
  * ------------------------------------------------------------------- */
 import xkeonteAsset from "@/assets/xkeonte-portrait.jpg";
+import hassynainAsset from "@/assets/hassynain.png";
+import xandeptAsset from "@/assets/xandept.png";
 import sebzAsset from "@/assets/sebzonair.jpg";
 import amiriAsset from "@/assets/4didit-group.png";
 import primeAsset from "@/assets/primedehaney.png";
@@ -595,6 +597,38 @@ export const roster: RosterEntry[] = [
     image: queentayxAsset,
     bio: "Queentayx is a streamer and digital creator known for her personality-driven content and livestreams. She has built an online community through her streams and social media, creating content focused on entertainment and interaction with her audience.",
     socials: [{ platform: "Twitch", url: "https://www.twitch.tv/queentayx" }],
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "037",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "XANDE",
+    aliases: ["XANDE", "XANDEPT", "XANDE.PT"],
+    role: "INMATE",
+    image: xandeptAsset,
+    bio: "Xande is an online creator known through his site xande.pt — News & Stuff. More details coming soon.",
+    socials: [{ platform: "Website", url: "https://xande.pt" }],
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "038",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "HASSYNAIN",
+    aliases: ["HASSY", "HASSYNAIN"],
+    role: "INMATE",
+    image: hassynainAsset,
+    bio: "Hassynain is an online creator and personality active across TikTok, Instagram, YouTube, X, Snapchat and Twitch.",
+    socials: [
+      { platform: "TikTok", url: "https://www.tiktok.com/@hassynain" },
+      { platform: "Snapchat", url: "https://www.snapchat.com/@hassynain" },
+      { platform: "Instagram", url: "https://www.instagram.com/hassynain" },
+      { platform: "X", url: "https://x.com/hassynain" },
+      { platform: "YouTube", url: "https://www.youtube.com/@Hassynain" },
+      { platform: "Twitch", url: "https://www.twitch.tv/hasynain" },
+      { platform: "Discord", url: "https://discord.com/invite/2j3zM4KGv" },
+    ],
     status: "CONFIRMED — INSIDE",
   },
 ];
