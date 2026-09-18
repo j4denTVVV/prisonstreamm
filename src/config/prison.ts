@@ -99,6 +99,7 @@ import lunamichelle2Asset from "@/assets/lunamichelle2.png";
 import moalshemeriAsset from "@/assets/moalshemeri.png";
 import tigzAsset from "@/assets/tigz.png";
 import queentayxAsset from "@/assets/queentayx.png";
+import lilaAsset from "@/assets/lila.png";
 
 export type SocialLink = { platform: string; url: string };
 
@@ -377,6 +378,20 @@ export const roster: RosterEntry[] = [
     image: britishboycamAsset,
     bio: "BritishBoyCam is a streamer known for his variety of content, particularly his Just Chatting streams and girl-focused content. His streams are built around his personality and interactions with different guests and viewers.",
     socials: [],
+    status: "CONFIRMED — INSIDE",
+  },
+  {
+    file: "023",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "LILA",
+    aliases: ["LILA SENAINI", "LILASENAINI"],
+    role: "INMATE",
+    image: lilaAsset,
+    bio: "Lila is a digital creator and online personality known for her presence across social media. Her content is built around her personality and connecting with her audience as she continues to grow within the creator space.",
+    socials: [
+      { platform: "Instagram", url: "https://www.instagram.com/lila.senaini/" },
+    ],
     status: "CONFIRMED — INSIDE",
   },
   {
