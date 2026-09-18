@@ -381,6 +381,20 @@ export const roster: RosterEntry[] = [
     status: "CONFIRMED — INSIDE",
   },
   {
+    file: "023",
+    revealed: true,
+    clearance: "CONFIRMED",
+    name: "LILA",
+    aliases: ["LILA SENAINI", "LILASENAINI"],
+    role: "INMATE",
+    image: lilaAsset,
+    bio: "Lila is a digital creator and online personality known for her presence across social media. Her content is built around her personality and connecting with her audience as she continues to grow within the creator space.",
+    socials: [
+      { platform: "Instagram", url: "https://www.instagram.com/lila.senaini/" },
+    ],
+    status: "CONFIRMED — INSIDE",
+  },
+  {
     file: "024",
     revealed: true,
     clearance: "CONFIRMED",
