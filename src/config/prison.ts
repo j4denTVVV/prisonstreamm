@@ -99,6 +99,7 @@ import lunamichelle2Asset from "@/assets/lunamichelle2.png";
 import moalshemeriAsset from "@/assets/moalshemeri.png";
 import tigzAsset from "@/assets/tigz.png";
 import queentayxAsset from "@/assets/queentayx.png";
+import lilaAsset from "@/assets/lila.png";
 
 export type SocialLink = { platform: string; url: string };
 
