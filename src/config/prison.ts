@@ -45,15 +45,15 @@ export const systemReadout = [
   { label: "TRANSMISSIONS", value: "STANDBY", tone: "warn" as const },
   { label: "ROSTER", value: "CLASSIFIED", tone: "muted" as const },
   { label: "NEXT REVEAL", value: "UNKNOWN", tone: "muted" as const },
-  { label: "LAUNCH", value: "AUTUMN 2026", tone: "ok" as const },
+  { label: "LAUNCH", value: "23 OCTOBER 2026", tone: "ok" as const },
   { label: "SECURITY LEVEL", value: "[CLASSIFIED]", tone: "muted" as const },
 ];
 
 export const projectFile = [
   { label: "PROJECT", value: "PRISON STREAM" },
   { label: "STATUS", value: "ACTIVE" },
-  { label: "LAUNCH", value: "AUTUMN 2026" },
-  { label: "DATE", value: "CLASSIFIED" },
+  { label: "LAUNCH", value: "23 OCTOBER 2026" },
+  { label: "DATE", value: "23 OCTOBER 2026" },
   { label: "PARTICIPANTS", value: "CLASSIFIED" },
   { label: "LOCATION", value: "CLASSIFIED" },
   { label: "FORMAT", value: "CLASSIFIED" },
