@@ -23,8 +23,10 @@ function useCountdown(targetIso: string | null) {
 
 function Unit({ value, label }: { value: string; label: string }) {
   return (
-    <div className="panel corner-marks flex flex-col items-center px-4 py-5 sm:px-8">
-      <span className="font-display text-4xl leading-none tabular-nums sm:text-6xl">{value}</span>
+    <div className="panel corner-marks animate-siren flex flex-col items-center px-4 py-5 sm:px-8">
+      <span key={value} className="animate-tick font-display text-4xl leading-none tabular-nums sm:text-6xl">
+        {value}
+      </span>
       <span className="label-mono mt-2">{label}</span>
     </div>
   );
@@ -40,7 +42,7 @@ export function Lockdown() {
 
   return (
     <div className="grid gap-8 lg:grid-cols-[1.3fr_1fr]">
-      <div className="panel grain vignette relative overflow-hidden p-8 sm:p-12">
+      <div className="panel grain vignette animate-breathe relative overflow-hidden p-8 sm:p-12">
         <span className="label-mono text-rust">Launch window</span>
         {countdown ? (
           <>
