@@ -103,7 +103,7 @@ function AdminPage() {
 
   if (unlocked === null) {
     return (
-      <PageShell eyebrow="Restricted" title="Control room">
+      <PageShell kicker="Restricted" title="Control room">
         <p className="label-mono animate-flicker">Verifying clearance…</p>
       </PageShell>
     );
@@ -111,7 +111,7 @@ function AdminPage() {
 
   if (!unlocked) {
     return (
-      <PageShell eyebrow="Restricted" title="Control room">
+      <PageShell kicker="Restricted" title="Control room">
         <form onSubmit={onLogin} className="panel animate-siren max-w-md space-y-4 p-8">
           <label className="label-mono block text-rust">Staff passcode</label>
           <input
@@ -135,7 +135,7 @@ function AdminPage() {
   }
 
   return (
-    <PageShell eyebrow="Restricted" title="Control room">
+    <PageShell kicker="Restricted" title="Control room">
       <div className="mb-8 flex flex-wrap items-center gap-2">
         {(["apps", "board"] as const).map((t) => (
           <button
