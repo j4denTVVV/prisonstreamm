@@ -29,15 +29,14 @@ export const terms = {
  * countdown automatically. Do NOT guess a date.
  * ------------------------------------------------------------------- */
 export const launch = {
-  window: "AUTUMN",
+  window: "23 OCTOBER",
   year: "2026",
-  exactDateAnnounced: false,
-  /** e.g. "2026-10-31T20:00:00Z" — only once officially confirmed */
-  targetIso: null as string | null,
-  /** shown while the date is unknown */
-  dateLabel: "NOT YET REVEALED",
-  timeLabel: "CLASSIFIED",
-  status: "AWAITING AUTHORIZATION",
+  exactDateAnnounced: true,
+  /** Confirmed launch: 23 October 2026, 20:00 UK */
+  targetIso: "2026-10-23T19:00:00Z" as string | null,
+  dateLabel: "23 OCTOBER 2026",
+  timeLabel: "20:00 UK",
+  status: "CONFIRMED — GATES OPEN SOON",
 } as const;
 
 /** Atmospheric readouts. Visual only — never fake statistics. */
@@ -46,15 +45,15 @@ export const systemReadout = [
   { label: "TRANSMISSIONS", value: "STANDBY", tone: "warn" as const },
   { label: "ROSTER", value: "CLASSIFIED", tone: "muted" as const },
   { label: "NEXT REVEAL", value: "UNKNOWN", tone: "muted" as const },
-  { label: "LAUNCH", value: "AUTUMN 2026", tone: "ok" as const },
+  { label: "LAUNCH", value: "23 OCTOBER 2026", tone: "ok" as const },
   { label: "SECURITY LEVEL", value: "[CLASSIFIED]", tone: "muted" as const },
 ];
 
 export const projectFile = [
   { label: "PROJECT", value: "PRISON STREAM" },
   { label: "STATUS", value: "ACTIVE" },
-  { label: "LAUNCH", value: "AUTUMN 2026" },
-  { label: "DATE", value: "CLASSIFIED" },
+  { label: "LAUNCH", value: "23 OCTOBER 2026" },
+  { label: "DATE", value: "23 OCTOBER 2026" },
   { label: "PARTICIPANTS", value: "CLASSIFIED" },
   { label: "LOCATION", value: "CLASSIFIED" },
   { label: "FORMAT", value: "CLASSIFIED" },
