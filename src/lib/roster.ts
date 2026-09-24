@@ -1,4 +1,14 @@
-import { placeholderFiles, roster, type RosterEntry } from "@/config/prison";
+import { placeholderFiles, roster as baseRoster, type RosterEntry } from "@/config/prison";
+
+/** Guests added from the control room, merged in at runtime. */
+let guestEntries: RosterEntry[] = [];
+export function setGuestEntries(entries: RosterEntry[]) {
+  guestEntries = entries;
+}
+function allEntries(): RosterEntry[] {
+  const baseFiles = new Set(baseRoster.map((r) => r.file));
+  return [...baseRoster, ...guestEntries.filter((g) => !baseFiles.has(g.file))];
+}
 
 /** Real announcements first, then unnamed placeholder files. */
 export const UNSEALED_STORAGE_KEY = "ps-unsealed-files";
@@ -20,7 +30,7 @@ export function readUnsealedFiles(): string[] {
  * file this visitor has unsealed via the reveals search terminal.
  */
 export function getRosterFiles(unsealed: string[] = []): RosterEntry[] {
-  const revealed = roster.filter(
+  const revealed = allEntries().filter(
     (r) => r.revealed && (clearanceOf(r) === "REVEALED" || unsealed.includes(r.file)),
   );
   const used = new Set(revealed.map((r) => r.file));
@@ -35,7 +45,7 @@ export function getRosterFiles(unsealed: string[] = []): RosterEntry[] {
 }
 
 export function findFile(fileId: string, unsealed: string[] = []): RosterEntry {
-  const entry = roster.find((r) => r.file === fileId);
+  const entry = allEntries().find((r) => r.file === fileId);
   if (!entry) return { file: fileId, revealed: false };
 
   const isPublic = clearanceOf(entry) === "REVEALED";
@@ -57,7 +67,7 @@ export function clearanceOf(entry: RosterEntry): "CLASSIFIED" | "CONFIRMED" | "R
 
 /** Every creator in the database that carries a name. */
 export function creatorDatabase(): RosterEntry[] {
-  return roster.filter((r) => !!r.name);
+  return allEntries().filter((r) => !!r.name);
 }
 
 /** Case-insensitive lookup across names, aliases and usernames. */

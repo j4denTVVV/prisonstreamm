@@ -1,3 +1,4 @@
+import { useLiveGuests } from "@/lib/live-guests";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, Lock } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -30,6 +31,7 @@ function FilePage() {
 
   useEffect(() => setUnsealed(readUnsealedFiles()), []);
 
+  useLiveGuests();
   const entry = findFile(fileId, unsealed);
 
   return (
