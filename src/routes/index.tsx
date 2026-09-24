@@ -1,3 +1,4 @@
+import { useLiveGuests } from "@/lib/live-guests";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useCallback, useState } from "react";
 import { ArrowRight, Play } from "lucide-react";
@@ -32,6 +33,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [entering, setEntering] = useState(false);
+  useLiveGuests();
   const files = getRosterFiles().slice(0, 4);
 
   const onDoorsOpen = useCallback(() => {

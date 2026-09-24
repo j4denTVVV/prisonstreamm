@@ -1,3 +1,4 @@
+import { useLiveGuests } from "@/lib/live-guests";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { PageShell } from "@/components/prison/PageShell";
@@ -27,6 +28,7 @@ function RosterPage() {
   const [unsealed, setUnsealed] = useState<string[]>([]);
   useEffect(() => setUnsealed(readUnsealedFiles()), []);
 
+  useLiveGuests();
   const files = getRosterFiles(unsealed);
   const revealedCount = files.filter((f) => f.revealed).length;
 

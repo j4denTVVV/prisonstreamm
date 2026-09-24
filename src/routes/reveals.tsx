@@ -1,3 +1,4 @@
+import { useLiveGuests } from "@/lib/live-guests";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Search, Lock, ShieldCheck, FileWarning } from "lucide-react";
@@ -251,6 +252,7 @@ function RevealsPage() {
     setQuery("");
   };
 
+  useLiveGuests();
   const db = creatorDatabase();
   const unsealed = guests
     .map((file) => db.find((c) => c.file === file))
