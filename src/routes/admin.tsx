@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useCallback, useEffect, useState } from "react";
 import { PageShell } from "@/components/prison/PageShell";
+import { GuestsAdmin } from "@/components/prison/GuestsAdmin";
 import {
   adminLogin,
   adminLogout,
@@ -63,7 +64,7 @@ function AdminPage() {
   const [unlocked, setUnlocked] = useState<boolean | null>(null);
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [tab, setTab] = useState<"apps" | "board">("apps");
+  const [tab, setTab] = useState<"apps" | "board" | "guests">("apps");
   const [apps, setApps] = useState<ApplicationRow[]>([]);
   const [bulletins, setBulletins] = useState<BulletinRow[]>([]);
   const [draft, setDraft] = useState<BulletinDraft>({ ...emptyBulletin });
@@ -79,7 +80,7 @@ function AdminPage() {
     void (async () => {
       const s = await status({});
       setUnlocked(s.unlocked);
-      if (s.unlocked) await refresh();
+      if (s.unlocked) await refresh().catch(() => setUnlocked(false));
     })();
   }, [status, refresh]);
 
@@ -137,7 +138,7 @@ function AdminPage() {
   return (
     <PageShell kicker="Restricted" title="Control room">
       <div className="mb-8 flex flex-wrap items-center gap-2">
-        {(["apps", "board"] as const).map((t) => (
+        {(["apps", "board", "guests"] as const).map((t) => (
           <button
             key={t}
             onClick={() => setTab(t)}
@@ -145,7 +146,7 @@ function AdminPage() {
               tab === t ? "border-rust bg-card text-foreground" : "bg-card/40 text-muted-foreground"
             }`}
           >
-            {t === "apps" ? `Requests (${apps.length})` : `Bulletin board (${bulletins.length})`}
+            {t === "apps" ? `Requests (${apps.length})` : t === "board" ? `Bulletin board (${bulletins.length})` : "Guests"}
           </button>
         ))}
         <button
@@ -159,7 +160,9 @@ function AdminPage() {
         </button>
       </div>
 
-      {tab === "apps" ? (
+      {tab === "guests" ? (
+        <GuestsAdmin />
+      ) : tab === "apps" ? (
         <div className="space-y-4">
           {apps.length === 0 ? (
             <p className="label-mono">No requests yet.</p>
